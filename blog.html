@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HeNeF General Supply</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="blog-style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Facility/henewlogo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About HeNeF</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Blog</h1>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="Facility/lab.png" alt="Lab">
+                <h2>Our Blog Post</h2>
+                <p>At Henef Company, we envision a world where everyday moments are transformed into extraordinary experiences through the simple joy of our exceptional soaps...</p>
+                <br>
+                <h2>10 Tips for Effective Handwashing</h2>
+                <p>"Washing your hands is one of the most effective ways to prevent the spread of germs and infections...</p>
+                <ol>
+                    <li>Use warm water: Warm water helps to loosen dirt and oils from your hands.</li>
+                    <li>Use soap: Be sure to use soap when washing your hands...</li>
+                    <!-- Rest of the list -->
+                </ol>
+
+
+                
+
+                <!-- Image Slider -->
+                <div class="slider">
+                    <div class="slides">
+                        <img src="image 12.jpg" alt="Product 1">
+                        <img src="image 18.avif" alt="Product 2">
+                        <img src="image 4.jpg" alt="Product 3">
+                        <img src="chemical/ethano2.jpg" alt="Product 3">
+                        <img src="chemical/ethanojp.webp" alt="Product 3">
+                        <img src="chemical/distilled-methanol.jpg" alt="Product 3">
+                        <img src="chemical/nitric.png" alt="Product 3">
+                        <img src="chemical/METHANOL.jpg" alt="Product 3">
+                        <img src="chemical/sodium bicarbonate.jpg" alt="Product 3">
+                        <img src="chemical/soda-ash-500x500.webp" alt="Product 3">
+                        <img src="chemical/sodium thiopenta.webp" alt="Product 3">
+                        <img src="chemical/sodium thiosulphate.avif" alt="Product 3">
+                        <img src="chemical/sodium-chloride-ar-grade-25kg.jpg" alt="Product 3">
+                        <img src="chemical/hydrochloric-acid-hcl-500x500.webp" alt="Product 3">
+                        <img src="chemical/naclll.webp" alt="Product 3">
+                        <img src="chemical/sodium-hydroxide-flakes.webp" alt="Product 3">
+                        <img src="chemical/Sodium-Thiosulphate-1-kg.webp" alt="Product 3">
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+
+                <p>By following these tips, you can help to keep yourself and others healthy...</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <!-- Post categories content -->
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>HeNeF Tunaji husisha na utengenezaji wa tindikali vifaa vya maabara...</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About HeNeF</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="footer-bottom">
+            <marquee><p>Made with <i class="fa fa-heart-o"></i> by HeNeF General Supply</p></marquee>
+        </div>
+    </section>
+
+    <script>
+        // Slider JavaScript
+        let currentSlide = 0;
+
+        function changeSlide(n) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = slides.children.length;
+            currentSlide = (currentSlide + n + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+        }
+
+        // Menu Toggle JavaScript
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

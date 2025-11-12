@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HeNeF General Supply</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/> 
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation Section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Facility/henewlogo.png" alt="HeNeF Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About HeNeF</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About HeNeF</h1>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-page">
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h2>Welcome to HeNeF</h2>
+                    <p>Welcome to HeNeF, your premier destination for high-quality soap products. At HeNeF, we specialize in crafting a wide range of soaps, including body soap, hand soap, washing soap, and various other applications of soap.</p>
+                    <p>Our mission at HeNeF is to provide our customers with exceptional soap products that not only cleanse but also nourish and rejuvenate the skin. We take pride in using only the finest ingredients and maintaining the highest standards of production to ensure that every bar of soap we produce meets our rigorous quality criteria.</p>
+                    <p>Whether you're looking for a luxurious body soap for a pampering bath experience, a gentle hand soap for everyday use, or a powerful washing soap for tackling tough stains, HeNeF has you covered. With our dedication to excellence and customer satisfaction, we strive to exceed your expectations with every purchase.</p>
+                    <p>Thank you for choosing HeNeF for all your soap needs. We look forward to serving you and helping you discover the transformative power of our premium soap products.</p>
+                    <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="Facility/lab2.jpg" height="350" width="350" alt="Lab">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4> About Us</h4>
+        <p>HeNeF Tunaji husisha na uuzaji wa kemikali, vifaa vya maabara na <br>utengenezaji wa sabuni<br>na malighafi za sabuni</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About HeNeF</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>Made with <i class="fa fa-heart-o"></i> by HeNeF General Supply</p>
+        </div>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
